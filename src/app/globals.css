@@ -80,10 +80,6 @@ body {
   color: hsl(var(--foreground));
 }
 
-section {
-  scroll-snap-align: start;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
   border-radius: 10px;
