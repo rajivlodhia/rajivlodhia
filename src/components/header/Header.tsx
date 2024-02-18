@@ -10,7 +10,7 @@ type Props = {
 
 const Header: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
     return (
-        <header className="p-6 md:px-0 w-full mx-auto flex justify-between text-lg">
+        <header className="py-6 md:px-0 w-full mx-auto flex justify-between text-lg items-center sm:items-start">
             <Link href="/" className="text-rose-300 font-bold tracking-wide hover:tracking-widest">
                 Rajiv Lodhia
             </Link>
