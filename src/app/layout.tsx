@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { League_Spartan } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import _Link from '@/components/ui/_Link'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = League_Spartan({
+    subsets: ['latin'],
+    // weight: '400',
+})
 
 export const metadata: Metadata = {
     title: 'Rajiv Lodhia',
@@ -14,21 +17,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={cn(inter.className, 'transition')}>
-                <header className="py-6 max-w-7xl mx-auto flex justify-between">
-                    <Link href="/">Rajiv Lodhia</Link>
-                    <nav className="flex flex-row gap-5">
-                        <Link href="#about" className="hover:opacity-80">
-                            About
-                        </Link>
-                        <Link href="#contact" className="hover:opacity-80">
-                            Contact Me
-                        </Link>
-                        <Link href="#projects" className="hover:opacity-80">
-                            Projects
-                        </Link>
-                    </nav>
-                </header>
+            <body className={cn(font.className, 'min-h-screen bg-slate-900')} style={{ scrollSnapType: 'y mandatory' }}>
                 {children}
             </body>
         </html>
