@@ -6,7 +6,7 @@ import Heading2 from '@/components/ui/Heading2'
 export default function Home() {
     return (
         <main className="flex max-w-7xl mx-auto flex-col px-6">
-            <Section id="hero" className="pt-0 grid">
+            <Section id="hero" className="pt-0">
                 <Hero />
             </Section>
             <Section id="about">

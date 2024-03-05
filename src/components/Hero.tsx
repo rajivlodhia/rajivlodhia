@@ -10,7 +10,7 @@ const Hero: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
     return (
         <>
             <Header />
-            <div className="flex flex-col sm:flex-row items-center gap-10 mt-20 sm:mt-0">
+            <div className="flex flex-col sm:flex-row items-center gap-10 my-auto">
                 <div>
                     <Heading1 className="mb-4">Full Stack Developer</Heading1>
                     <p className="text-lg">

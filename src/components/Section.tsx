@@ -11,7 +11,7 @@ const Section: NextComponentType<NextPageContext, object, Props> = (props: Props
     return (
         <section
             id={props.id}
-            className={cn('min-h-screen py-10', props.className)}
+            className={cn('min-h-screen py-10 flex flex-col', props.className)}
             style={{ scrollSnapAlign: 'start', scrollSnapStop: 'always' }}
         >
             {props.children}
