@@ -1,8 +1,9 @@
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 import Experience from '@/components/Experience'
 import Hero from '@/components/Hero'
+import Projects from '@/components/Projects'
 import Section from '@/components/Section'
-import Heading2 from '@/components/ui/Heading2'
 
 export default function Home() {
     return (
@@ -14,13 +15,13 @@ export default function Home() {
                 <About />
             </Section>
             <Section id="projects">
-                <Heading2>Projects</Heading2>
+                <Projects />
             </Section>
             <Section id="experience">
                 <Experience />
             </Section>
             <Section id="contact">
-                <Heading2>Get In Touch</Heading2>
+                <Contact />
             </Section>
         </main>
     )
