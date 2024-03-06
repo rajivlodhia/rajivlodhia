@@ -1,3 +1,4 @@
+import About from '@/components/About'
 import Experience from '@/components/Experience'
 import Hero from '@/components/Hero'
 import Section from '@/components/Section'
@@ -10,7 +11,7 @@ export default function Home() {
                 <Hero />
             </Section>
             <Section id="about">
-                <Heading2>About Me</Heading2>
+                <About />
             </Section>
             <Section id="projects">
                 <Heading2>Projects</Heading2>
