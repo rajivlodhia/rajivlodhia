@@ -1,6 +1,6 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import Heading2 from './ui/Heading2'
-import ExperienceLogo from './ui/ExperienceLogo'
+import Heading2 from './ui/heading-2'
+import ExperienceLogo from './ui/experience-logo'
 
 type Props = {}
 

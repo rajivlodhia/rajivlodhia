@@ -1,5 +1,5 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import Heading2 from './ui/Heading2'
+import Heading2 from './ui/heading-2'
 
 const Contact: NextComponentType<NextPageContext> = () => {
     return (

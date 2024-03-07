@@ -1,6 +1,6 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import Link from 'next/link'
-import _Link from '../ui/_Link'
+import _Link from '../ui/link'
 import MobileMenu from './MobileMenu'
 
 type Props = {

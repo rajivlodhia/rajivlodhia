@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import _Link from '../ui/_Link'
+import _Link from '../ui/link'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 
