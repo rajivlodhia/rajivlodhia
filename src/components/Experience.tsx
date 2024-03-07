@@ -17,16 +17,16 @@ const Experience: NextComponentType<NextPageContext, object, Props> = (props: Pr
                 </p>
             </span>
             <div className="flex gap-6 sm:gap-10 justify-center flex-wrap max-w-3xl ml-auto">
-                <ExperienceLogo src="/experience/nextjs-logo.png" alt="CSS Logo" title="NextJS" />
-                <ExperienceLogo src="/experience/react-logo.webp" alt="CSS Logo" title="React" />
-                <ExperienceLogo src="/experience/typescript-logo.png" alt="CSS Logo" title="TypeScript" />
-                <ExperienceLogo src="/experience/php-logo.png" alt="CSS Logo" title="PHP" />
+                <ExperienceLogo src="/experience/nextjs-logo.png" alt="NextJS Logo" title="NextJS" />
+                <ExperienceLogo src="/experience/react-logo.webp" alt="React Logo" title="React" />
+                <ExperienceLogo src="/experience/typescript-logo.png" alt="Typescript Logo" title="TypeScript" />
+                <ExperienceLogo src="/experience/php-logo.png" alt="PHP Logo" title="PHP" />
                 <ExperienceLogo src="/experience/css-logo.png" alt="CSS Logo" title="CSS" />
-                <ExperienceLogo src="/experience/tailwind-logo.png" alt="CSS Logo" title="Tailwind CSS" />
-                <ExperienceLogo src="/experience/wordpress-logo.webp" alt="CSS Logo" title="WordPress" />
+                <ExperienceLogo src="/experience/tailwind-logo.png" alt="Tailwind Logo" title="Tailwind CSS" />
+                <ExperienceLogo src="/experience/wordpress-logo.webp" alt="WordPress Logo" title="WordPress" />
                 <ExperienceLogo src="/experience/drupal-logo.webp" alt="Drupal Logo" title="Drupal" />
-                <ExperienceLogo src="/experience/git-logo.png" alt="CSS Logo" title="GIT" />
-                <ExperienceLogo src="/experience/vscode-logo.png" alt="CSS Logo" title="VS Code" />
+                <ExperienceLogo src="/experience/git-logo.png" alt="GIT Logo" title="GIT" />
+                <ExperienceLogo src="/experience/vscode-logo.png" alt="VS Code Logo" title="VS Code" />
             </div>
         </div>
     )
