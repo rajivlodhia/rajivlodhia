@@ -70,13 +70,13 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     <div className="prev">
                         <ChevronLeft
                             size={30}
-                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-200"
+                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-300"
                         />
                     </div>
                     <div className="next">
                         <ChevronRight
                             size={30}
-                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-200"
+                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-300"
                         />
                     </div>
                 </span>
