@@ -6,6 +6,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
 
 import 'swiper/css/bundle'
 import ProjectSlide from './project-slide'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const ProjectSwiper: NextComponentType<NextPageContext> = () => {
     return (
@@ -13,10 +14,17 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
+            speed={850}
+            loop={true}
+            navigation={{ enabled: true, nextEl: '.next', prevEl: '.prev' }}
+            pagination={{
+                clickable: true,
+                el: '.swiper-pagination-custom',
+                bulletClass: 'swiper-pagination-bullet !bg-slate-100',
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+            parallax={true}
             className="w-full h-auto"
         >
             <SwiperSlide>
@@ -26,6 +34,11 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     title="Chxngelog.com"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 />
+                {/* <Image
+                    src="/projects/Project-Chxngelog.jpg"
+                    alt="Chxngelog Project"
+                    width="500"
+                    height="500"
             </SwiperSlide>
             <SwiperSlide>
                 <ProjectSlide
@@ -51,6 +64,23 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 />
             </SwiperSlide>
+            <div className="flex justify-between items-center mt-2">
+                <span className="swiper-pagination-custom relative mt-4 flex flex-row gap-1"></span>
+                <span className="flex flex-row">
+                    <div className="prev">
+                        <ChevronLeft
+                            size={30}
+                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-200"
+                        />
+                    </div>
+                    <div className="next">
+                        <ChevronRight
+                            size={30}
+                            className="hover:scale-125 transition-all text-slate-400 hover:text-slate-200"
+                        />
+                    </div>
+                </span>
+            </div>
         </Swiper>
     )
 }

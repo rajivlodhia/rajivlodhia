@@ -1,3 +1,5 @@
+'use client'
+
 import type { NextComponentType, NextPageContext } from 'next'
 import Image from 'next/image'
 
@@ -19,7 +21,7 @@ const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: 
                 className="rounded-[32px] border-4 border-slate-800 w-auto h-auto"
             />
             <article className="mt-4 space-y-2">
-                <h3 className="text-xl">{props.title}</h3>
+                <h3 className="text-xl font-bold">{props.title}</h3>
                 <p>{props.description}</p>
             </article>
         </>
