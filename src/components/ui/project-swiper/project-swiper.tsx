@@ -2,16 +2,16 @@
 
 import type { NextComponentType, NextPageContext } from 'next'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
-
-import 'swiper/css/bundle'
+import { Navigation, Pagination, Scrollbar, A11y, Parallax } from 'swiper/modules'
 import ProjectSlide from './project-slide'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+
+import 'swiper/css/bundle'
 
 const ProjectSwiper: NextComponentType<NextPageContext> = () => {
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Parallax]}
             spaceBetween={50}
             slidesPerView={1}
             speed={850}
@@ -34,11 +34,6 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     title="Chxngelog.com"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 />
-                {/* <Image
-                    src="/projects/Project-Chxngelog.jpg"
-                    alt="Chxngelog Project"
-                    width="500"
-                    height="500"
             </SwiperSlide>
             <SwiperSlide>
                 <ProjectSlide

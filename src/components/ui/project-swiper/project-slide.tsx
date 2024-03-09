@@ -21,8 +21,17 @@ const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: 
                 className="rounded-[32px] border-4 border-slate-800 w-auto h-auto"
             />
             <article className="mt-4 space-y-2">
-                <h3 className="text-xl font-bold">{props.title}</h3>
-                <p>{props.description}</p>
+                <h3
+                    className="text-xl font-bold"
+                    data-swiper-parallax-duration="500"
+                    data-swiper-parallax-opacity="0"
+                    data-swiper-parallax-x="-100"
+                >
+                    {props.title}
+                </h3>
+                <p data-swiper-parallax-duration="800" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100">
+                    {props.description}
+                </p>
             </article>
         </>
     )
