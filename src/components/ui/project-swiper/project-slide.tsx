@@ -8,6 +8,7 @@ type Props = {
     image_alt: string
     title: string
     description: string
+    url: string
 }
 
 const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
@@ -20,7 +21,7 @@ const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: 
                 height="500"
                 className="rounded-[32px] border-4 border-slate-800 w-auto h-auto"
             />
-            <article className="mt-4 space-y-2">
+            <article className="mt-4">
                 <h3
                     className="text-xl font-bold"
                     data-swiper-parallax-duration="500"
@@ -29,7 +30,17 @@ const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: 
                 >
                     {props.title}
                 </h3>
-                <p data-swiper-parallax-duration="800" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100">
+                <a
+                    href={props.url}
+                    className="block text-sm text-slate-400 transition-all mb-3 hover:underline w-fit"
+                    target="_blank"
+                    data-swiper-parallax-duration="700"
+                    data-swiper-parallax-opacity="0"
+                    data-swiper-parallax-x="-100"
+                >
+                    {props.url}
+                </a>
+                <p data-swiper-parallax-duration="900" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100">
                     {props.description}
                 </p>
             </article>
