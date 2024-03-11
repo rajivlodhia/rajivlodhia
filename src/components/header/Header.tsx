@@ -11,7 +11,7 @@ type Props = {
 const Header: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
     return (
         <header className="py-6 md:px-0 w-full mx-auto flex justify-between text-lg items-center sm:items-start">
-            <Link href="/" className="text-rose-300 font-bold tracking-wide hover:tracking-widest">
+            <Link href="/" className="text-rose-300 font-bold tracking-wide hover:scale-110 transition-transform">
                 Rajiv Lodhia
             </Link>
             <nav className="hidden sm:flex flex-row gap-5">
