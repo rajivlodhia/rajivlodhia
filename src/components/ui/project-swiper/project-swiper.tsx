@@ -32,7 +32,7 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     image_src="/projects/Project-Chxngelog.jpg"
                     image_alt="Chxngelog Project"
                     title="Chxngelog.com"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="A platform for developers to create, manage and share changelogs for their projects. The idea is to centralise the changelog writing process and remove the need to manually update changelogs in multiple places."
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -40,7 +40,7 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     image_src="/projects/Project-KeepGoing.jpg"
                     image_alt="KeepGoing Project"
                     title="Keep Going"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="A habit tracking web app that aims to help users build and maintain new, good habits. The app is designed to be simple, and encouraging for the user to keep their habits going with satisfying design and animations."
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -48,7 +48,7 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     image_src="/projects/Project-PawifyAI.jpg"
                     image_alt="PawifyAI Project"
                     title="Pawify AI"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="An e-commerce platform that sells custom AI-generated art of your pets, with an aim to upsell physical products such as canvases and posters. It allows users to upload sevaral photos of their pets and choose from a variety of art styles to generate their custom art."
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -56,7 +56,7 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                     image_src="/projects/Project-ReviewHandout.jpg"
                     image_alt="Review Handout Project"
                     title="Review Handout"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="A web app for businesses to generate and manage handouts to give to their customers explaining how to leave a Google review. It's designed to be as simple as possible for business owners to manage and for customers to understand."
                 />
             </SwiperSlide>
             <div className="flex justify-between items-center mt-2">
