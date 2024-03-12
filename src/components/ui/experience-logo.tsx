@@ -11,7 +11,7 @@ const ExperienceLogo: NextComponentType<NextPageContext, object, Props> = (props
     return (
         <span className="flex flex-col items-center">
             <Image
-                className="grayscale brightness-0 invert h-32 object-contain w-auto max-w-24"
+                className="grayscale brightness-0 invert object-contain w-auto h-24 max-w-16 sm:max-w-24 sm:h-32"
                 src={props.src}
                 alt={props.alt}
                 width={96}

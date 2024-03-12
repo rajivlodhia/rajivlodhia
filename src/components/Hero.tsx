@@ -12,7 +12,7 @@ const Hero: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
     return (
         <>
             <Header />
-            <div className="flex flex-col sm:flex-row items-center gap-10 my-auto">
+            <div className="flex flex-col md:flex-row items-center gap-10 md:my-auto mt-10">
                 <div>
                     <Heading1 className="mb-4">Full Stack Developer</Heading1>
                     <p className="text-lg mb-8">
@@ -31,7 +31,7 @@ const Hero: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
                     width={500}
                     height={700}
                     priority
-                    className="rounded-[32px] border-4 border-slate-800 w-auto h-auto max-w-[500px]"
+                    className="rounded-[32px] border-4 border-slate-800 w-auto h-auto lg:max-w-[500px]"
                 />
             </div>
         </>

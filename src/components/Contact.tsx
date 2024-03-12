@@ -22,7 +22,7 @@ const Contact: NextComponentType<NextPageContext> = () => {
 
                 <a
                     href="mailto:r_lodhia@hotmail.com"
-                    className="text-rose-300 relative font-bold text-4xl w-fit block animated-underline"
+                    className="text-rose-300 relative font-bold w-fit block animated-underline text-3xl sm:text-4xl"
                 >
                     r_lodhia@hotmail.com
                 </a>
