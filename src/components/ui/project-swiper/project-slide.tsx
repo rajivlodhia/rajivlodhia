@@ -32,7 +32,7 @@ const ProjectSlide: NextComponentType<NextPageContext, object, Props> = (props: 
                 </h3>
                 <a
                     href={props.url}
-                    className="block text-sm text-slate-400 transition-all mb-3 hover:underline w-fit"
+                    className="block text-sm text-slate-400 transition-all mb-3 animated-underline after:h-[1px] after:bg-slate-400 after:bottom-0"
                     target="_blank"
                     data-swiper-parallax-duration="700"
                     data-swiper-parallax-opacity="0"
