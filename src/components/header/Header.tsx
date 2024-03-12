@@ -1,7 +1,7 @@
 import type { NextComponentType, NextPageContext } from 'next'
-import Link from 'next/link'
-import _Link from '../ui/link'
+import NavLink from '../ui/nav-link'
 import MobileMenu from './MobileMenu'
+import NameHome from '../ui/name-home'
 
 type Props = {
     children?: React.ReactNode
@@ -11,14 +11,12 @@ type Props = {
 const Header: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
     return (
         <header className="py-6 md:px-0 w-full mx-auto flex justify-between text-lg items-center sm:items-start">
-            <Link href="/" className="text-rose-300 font-bold tracking-wide animated-underline">
-                Rajiv Lodhia
-            </Link>
+            <NameHome />
             <nav className="hidden sm:flex flex-row gap-5">
-                <_Link href="#about">About</_Link>
-                <_Link href="#projects">Projects</_Link>
-                <_Link href="#experience">Experience</_Link>
-                <_Link href="#contact">Contact Me</_Link>
+                <NavLink href="#about">About</NavLink>
+                <NavLink href="#projects">Projects</NavLink>
+                <NavLink href="#experience">Experience</NavLink>
+                <NavLink href="#contact">Contact Me</NavLink>
             </nav>
             <MobileMenu className="block sm:hidden" />
         </header>

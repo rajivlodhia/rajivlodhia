@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import _Link from '@/components/ui/link'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation'
 
 const font = League_Spartan({

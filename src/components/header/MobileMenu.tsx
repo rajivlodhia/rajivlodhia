@@ -5,9 +5,9 @@ import { Button } from '../ui/button'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import _Link from '../ui/link'
-import Link from 'next/link'
+import NavLink from '../ui/nav-link'
 import { AnimatePresence, motion } from 'framer-motion'
+import NameHome from '../ui/name-home'
 
 type Props = {
     className?: string
@@ -48,9 +48,7 @@ const MobileMenu: NextComponentType<NextPageContext, object, Props> = (props: Pr
                             exit={{ y: -10, opacity: 0 }}
                             transition={{ delay: 0.2, duration: 0.4 }}
                         >
-                            <Link href="/" className="text-rose-300 font-bold tracking-wide hover:tracking-widest">
-                                Rajiv Lodhia
-                            </Link>
+                            <NameHome />
                         </motion.div>
                         <motion.ol
                             initial={{ y: 10, opacity: 0 }}
@@ -60,24 +58,24 @@ const MobileMenu: NextComponentType<NextPageContext, object, Props> = (props: Pr
                             className="flex flex-col gap-10 items-center"
                         >
                             <motion.li key="about">
-                                <_Link href="#about" onClick={toggleMenu}>
+                                <NavLink href="#about" onClick={toggleMenu}>
                                     About
-                                </_Link>
+                                </NavLink>
                             </motion.li>
                             <motion.li key="projects">
-                                <_Link href="#projects" onClick={toggleMenu}>
+                                <NavLink href="#projects" onClick={toggleMenu}>
                                     Projects
-                                </_Link>
+                                </NavLink>
                             </motion.li>
                             <motion.li key="experience">
-                                <_Link href="#experience" onClick={toggleMenu}>
+                                <NavLink href="#experience" onClick={toggleMenu}>
                                     Experience
-                                </_Link>
+                                </NavLink>
                             </motion.li>
                             <motion.li key="contact">
-                                <_Link href="#contact" onClick={toggleMenu}>
+                                <NavLink href="#contact" onClick={toggleMenu}>
                                     Contact Me
-                                </_Link>
+                                </NavLink>
                             </motion.li>
                         </motion.ol>
                     </motion.div>

@@ -6,8 +6,8 @@ type Props = {
     className?: string
 } & LinkProps
 
-const _Link = (props: Props) => {
+const NavLink = (props: Props) => {
     return <Link className={cn('hover:text-rose-300 transition-colors', props.className)} {...props} />
 }
 
-export default _Link
+export default NavLink

@@ -1,7 +1,7 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import Heading1 from './ui/header-1'
 import Image from 'next/image'
-import _Link from './ui/link'
+import NavLink from './ui/nav-link'
 import Header from './header/Header'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
