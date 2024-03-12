@@ -22,8 +22,8 @@ const MobileMenu: NextComponentType<NextPageContext, object, Props> = (props: Pr
 
     return (
         <div className={cn('', props.className)}>
-            <Button size="icon" onClick={toggleMenu} className="rounded-full bg-white text-black">
-                <Menu />
+            <Button size="icon" onClick={toggleMenu} className="rounded-full bg-white text-black w-8 h-8">
+                <Menu className="w-4 h-4" />
             </Button>
             <AnimatePresence>
                 {isMenuOpen && (
@@ -38,9 +38,9 @@ const MobileMenu: NextComponentType<NextPageContext, object, Props> = (props: Pr
                         <Button
                             size="icon"
                             onClick={toggleMenu}
-                            className="absolute top-0 right-0 m-6 rounded-full bg-white text-black"
+                            className="w-8 h-8 absolute top-0 right-0 m-6 rounded-full bg-white text-black"
                         >
-                            <X />
+                            <X className="w-4 h-4" />
                         </Button>
                         <motion.div
                             initial={{ y: 10, opacity: 0 }}
