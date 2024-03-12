@@ -11,9 +11,9 @@ const Experience: NextComponentType<NextPageContext, object, Props> = (props: Pr
                 <Heading2>Experience</Heading2>
                 <p>A diverse set of technical experience in both frontend and backend.</p>
                 <p>
-                    My goal is to keep expanding my knowledge as technology changes, and grow with the industry. With
-                    years of experience writing in PHP for WordPress and Drupal projects, I decided to expand my
-                    skillset and learn fullstack development with React and NextJS.
+                    My goal is to keep expanding my knowledge as technology changes, and grow together with the
+                    industry. With years of experience writing in PHP for WordPress and Drupal projects, I decided to
+                    expand my skillset and learn fullstack development with React and NextJS.
                 </p>
             </span>
             <div className="flex gap-6 sm:gap-10 justify-center flex-wrap max-w-3xl ml-auto">
