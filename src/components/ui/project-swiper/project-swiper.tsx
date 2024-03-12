@@ -29,20 +29,20 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
         >
             <SwiperSlide>
                 <ProjectSlide
-                    image_src="/projects/Project-Chxngelog.jpg"
-                    image_alt="Chxngelog Project"
-                    title="Chxngelog.com"
-                    description="A platform for developers to create, manage and share changelogs for their projects. The idea is to centralise the changelog writing process and remove the need to manually update changelogs in multiple places."
-                    url="https://chxngelog.com"
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <ProjectSlide
                     image_src="/projects/Project-KeepGoing.jpg"
                     image_alt="KeepGoing Project"
                     title="Keep Going"
                     description="A habit tracking web app that aims to help users build and maintain new, good habits. The app is designed to be simple, and encouraging for the user to keep their habits going with satisfying design and animations."
                     url="https://keepgoingapp.com"
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <ProjectSlide
+                    image_src="/projects/Project-Chxngelog.jpg"
+                    image_alt="Chxngelog Project"
+                    title="Chxngelog.com"
+                    description="A platform for developers to create, manage and share changelogs for their projects. The idea is to centralise the changelog writing process and remove the need to manually update changelogs in multiple places."
+                    url="https://chxngelog.com"
                 />
             </SwiperSlide>
             <SwiperSlide>
