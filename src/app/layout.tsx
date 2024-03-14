@@ -10,8 +10,26 @@ const font = League_Spartan({
 })
 
 export const metadata: Metadata = {
-    title: 'Rajiv Lodhia',
-    description: '',
+    title: 'Rajiv Lodhia - Full Stack Developer',
+    description:
+        "I'm a software develoepr from the UK who loves to write code, build software and solve problems with a modern touch.",
+    openGraph: {
+        type: 'website',
+        locale: 'en_GB',
+        url: 'https://rajivlodhia.com',
+        siteName: 'Rajiv Lodhia',
+        title: 'Rajiv Lodhia - Full Stack Developer',
+        description:
+            "I'm a software develoepr from the UK who loves to write code, build software and solve problems with a modern touch.",
+        images: [
+            {
+                url: 'https://rajivlodhia.com/share.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Rajiv Lodhia - Full Stack Developer',
+            },
+        ],
+    },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
