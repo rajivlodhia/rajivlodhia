@@ -1,9 +1,9 @@
 import type { NextComponentType, NextPageContext } from 'next'
 import Heading1 from './ui/header-1'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import NameHome from './ui/name-home'
+import NavLink from './ui/nav-link'
 
 interface Props {}
 
@@ -18,10 +18,10 @@ const Hero: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
                     Learning and applying new tech to old problems has got to be one my favourite parts of this
                     industry.
                 </p>
-                <Link href="#about" className="group/link flex flex-row items-center text-rose-300 w-fit">
+                <NavLink href="#about" className="group/link flex flex-row items-center text-rose-300 w-fit">
                     About Me
                     <ChevronRight className="h-4 w-4 ml-2 mb-1 group-hover/link:rotate-90 transition-transform" />
-                </Link>
+                </NavLink>
             </div>
             <Image
                 src="/ItsMe.jpg"
