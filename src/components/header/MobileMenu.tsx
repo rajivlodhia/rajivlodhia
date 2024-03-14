@@ -1,32 +1,29 @@
-'use client'
-
 import type { NextComponentType, NextPageContext } from 'next'
 import { Button } from '../ui/button'
 import { Menu, X } from 'lucide-react'
-import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import NavLink from '../ui/nav-link'
 import { AnimatePresence, motion } from 'framer-motion'
 import NameHome from '../ui/name-home'
 
 type Props = {
+    isMenuOpen: boolean
+    setIsMenuOpen: (isMenuOpen: boolean) => void
     className?: string
 }
 
 const MobileMenu: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
+        props.setIsMenuOpen(!props.isMenuOpen)
     }
 
     return (
-        <div className={cn('', props.className)}>
+        <div className={cn('flex sm:hidden ml-auto', props.className)}>
             <Button size="icon" onClick={toggleMenu} className="rounded-full bg-white text-black w-8 h-8">
                 <Menu className="w-4 h-4" />
             </Button>
             <AnimatePresence>
-                {isMenuOpen && (
+                {props.isMenuOpen && (
                     <motion.div
                         key="mobile-menu"
                         initial={{ opacity: 0 }}
