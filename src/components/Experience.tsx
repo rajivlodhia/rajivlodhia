@@ -6,7 +6,7 @@ type Props = {}
 
 const Experience: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
     return (
-        <div className="flex flex-col md:flex-row my-auto items-center gap-4">
+        <div className="flex flex-col md:flex-row my-auto items-center gap-4 pt-6 sm:pt-0">
             <span className="space-y-3 md:max-w-lg">
                 <Heading2>Experience</Heading2>
                 <p>A diverse set of technical experience in both frontend and backend.</p>
