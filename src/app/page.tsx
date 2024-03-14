@@ -4,10 +4,12 @@ import Experience from '@/components/Experience'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
 import Section from '@/components/Section'
+import Header from '@/components/header/Header'
 
 export default function Home() {
     return (
         <main className="flex max-w-7xl mx-auto flex-col px-6">
+            <Header />
             <Section id="hero" className="pt-0">
                 <Hero />
             </Section>

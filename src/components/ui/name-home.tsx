@@ -1,9 +1,14 @@
+import { cn } from '@/lib/utils'
 import type { NextComponentType, NextPageContext } from 'next'
 import Link from 'next/link'
 
-const NameHome: NextComponentType<NextPageContext> = () => {
+type Props = {
+    className?: string
+}
+
+const NameHome: NextComponentType<NextPageContext, object, Props> = (props: Props) => {
     return (
-        <Link href="/" className="text-rose-300 font-bold tracking-wide animated-underline">
+        <Link href="/" className={cn('text-rose-300 font-bold tracking-wide animated-underline', props.className)}>
             Rajiv Lodhia
         </Link>
     )
