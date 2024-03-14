@@ -22,8 +22,8 @@ const ProjectSwiper: NextComponentType<NextPageContext> = () => {
                 el: '.swiper-pagination-custom',
                 bulletClass: 'swiper-pagination-bullet !bg-slate-100',
             }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             parallax={true}
             className="w-full h-auto"
         >
