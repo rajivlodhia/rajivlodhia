@@ -14,8 +14,8 @@ const About: NextComponentType<NextPageContext> = () => {
                 </p>
                 <p>
                     I&apos;m always seeking new opportunities and challenges - eager to contribute to ambitious projects
-                    alongside innovative, creative minds. In doing so, I hope use my unique skillset to make the world a
-                    better place.
+                    alongside innovative, creative minds. In doing so, I hope to use my unique skillset to make the
+                    world a better place.
                 </p>
             </article>
         </div>
